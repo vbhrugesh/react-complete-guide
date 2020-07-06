@@ -101,7 +101,8 @@ class App extends Component {
   render() {
     
     const style = {
-      backgroundColor: 'white',
+      backgroundColor: 'green',
+      color: 'white',
       font: 'inherit',
       border: '1px solid blue',
       padding: '8px',
@@ -122,24 +123,12 @@ class App extends Component {
         }) }
       </div>
       );
+
+      style.backgroundColor = "red";
     }
 
     return (
       <div className="App">
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
         <button
           style={ style }
           onClick={ this.togglePersonsHandler }>Toggle Persons</button>
